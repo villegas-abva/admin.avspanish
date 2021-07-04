@@ -1,0 +1,42 @@
+name: av_spanish
+description: A new Flutter project.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  google_fonts: ^2.1.0
+  
+  #widgets
+  titled_navigation_bar: ^4.1.0
+
+  #youtube && videos
+  youtube_player_flutter: ^8.0.0
+
+  #flutterfire
+  firebase_core: ^1.3.0
+  cloud_firestore: ^2.2.2
+ 
+  cupertino_icons: ^1.0.2
+  provider: ^5.0.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_name: ^0.0.1
+
+flutter_launcher_name: 
+  name: 'AVSpanishAdmin'
+
+flutter:
+
+  uses-material-design: true

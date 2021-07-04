@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348464614809",
+    "project_id": "av-spanish-academy",
+    "storage_bucket": "av-spanish-academy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348464614809:android:0a6e6617fe42b002739708",
+        "android_client_info": {
+          "package_name": "org.mycompany.av_spanish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348464614809-m7t7qrv2jkk27gkkff88hb70hth9vmnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4PuD_JrpcEaOPIC9CIn9kSVk--B53XAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348464614809-m7t7qrv2jkk27gkkff88hb70hth9vmnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
