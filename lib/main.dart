@@ -1,5 +1,6 @@
 import 'package:av_spanish/pages/home/home_page.dart';
 import 'package:av_spanish/services/category_swipe.dart';
+import 'package:av_spanish/write_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,13 +19,11 @@ class AppWidget extends StatelessWidget {
       create: (context) => CategorySwipe(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'AV Spanish',
+        title: 'AV Spanish Admin',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        // home: AdminHomePage(),
         home: HomePage(),
-        // home: StartPage(),
       ),
     );
   }
