@@ -1,4 +1,4 @@
-import 'package:av_spanish/services/category_swipe.dart';
+import 'package:av_spanish/services/quiz_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +20,7 @@ class BotNavBarOptionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.read<CategorySwipe>().onCategoryPress(isSelected),
+      onTap: () => context.read<QuizFunctions>().onCategoryPress(isSelected),
       // onTap: onPress,
       child: Container(
         // height: MediaQuery.of(context).size.height * 0.10,

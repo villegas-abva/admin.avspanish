@@ -16,3 +16,10 @@ class ConstantsOptionNames {
   static const kUpdateQuiz = 'Update Quiz';
   static const kDeleteQuiz = 'Delete Quiz';
 }
+
+class Database {
+  static const kQuizzes = 'Quizzes';
+  static const kTFQuiz = 'True False';
+  static const kMCQuiz = 'Multiple Choice';
+  static const kCAQuiz = 'Compare Answer';
+}
