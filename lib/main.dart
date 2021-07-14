@@ -1,6 +1,6 @@
 import 'package:av_spanish/pages/home/home_page.dart';
 import 'package:av_spanish/services/category_swipe.dart';
-import 'package:av_spanish/write_test.dart';
+import 'package:av_spanish/test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -23,7 +23,8 @@ class AppWidget extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
+        home: Test(),
+        // home: HomePage(),
       ),
     );
   }
