@@ -12,18 +12,24 @@ class QuizFunctions extends ChangeNotifier {
 
   void addQuiz(String question1, answer1, startTime1, endTime1, question2,
       answer2, startTime2, endTime2) {
-    tfDocRefFinal.collection('Bob Esponja').doc().collection('question1').add({
+    tfDocRefFinal.collection('question1').add({
       'question': question1,
       'answer': answer1,
       'start time': startTime1,
       'end time': endTime1
     });
-    tfDocRefFinal.collection('Bob Esponja').doc().collection('question2').add({
+    tfDocRefFinal.collection('question2').add({
       'question': question2,
       'answer': answer2,
       'start time': startTime2,
       'end time': endTime2
     });
+    // tfDocRefFinal.collection('Bob Esponja').doc().collection('question2').add({
+    //   'question': question2,
+    //   'answer': answer2,
+    //   'start time': startTime2,
+    //   'end time': endTime2
+    // });
   }
 
   bool onCategoryPress(bool selected) {
