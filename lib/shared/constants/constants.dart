@@ -7,6 +7,9 @@ class Constants {
   static const kQuestionText =
       TextStyle(fontSize: 18, fontWeight: FontWeight.w500);
 
+  static List<String> kIdListQuestionAnswer = ["id_Question", "id_Answer"];
+  static List<String> kIdListTime = ["id_StartTime", "id_EndTime"];
+
   static const kHeaderText =
       TextStyle(fontSize: 18, fontWeight: FontWeight.w700);
 }

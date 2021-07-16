@@ -3,6 +3,18 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class QuizFunctions extends ChangeNotifier {
+  // lists
+  List<String>? questionList = [];
+  List<String>? answerList = [];
+  List<String>? startTimeList = [];
+  List<String>? endTimeList = [];
+
+  //Strings
+  String? question;
+  String? answer;
+  String? startTime;
+  String? endTime;
+
   // Document References
   final DocumentReference tfDocRefFinal = FirebaseFirestore.instance
       .collection(Database.kQuizzes)
@@ -30,6 +42,17 @@ class QuizFunctions extends ChangeNotifier {
     //   'start time': startTime2,
     //   'end time': endTime2
     // });
+  }
+
+  void addQuestionFields(
+      {required String question,
+      required String answer,
+      required String startTime,
+      required String endTime}) {
+    questionList?.add(question);
+    answerList?.add(answer);
+    startTimeList?.add(startTime);
+    endTimeList?.add(endTime);
   }
 
   bool onCategoryPress(bool selected) {
