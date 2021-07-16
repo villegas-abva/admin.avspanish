@@ -1,3 +1,4 @@
+import 'package:av_spanish/list_test.dart';
 import 'package:av_spanish/pages/home/home_page.dart';
 import 'package:av_spanish/services/quiz_functions.dart';
 import 'package:av_spanish/two_layers.dart';
@@ -25,10 +26,11 @@ class AppWidget extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
+        home: ListTest(),
         // home: TwoLayers(),
         // home: OneLayer(),
         // home: Test(),
-        home: HomePage(),
+        // home: HomePage(),
       ),
     );
   }

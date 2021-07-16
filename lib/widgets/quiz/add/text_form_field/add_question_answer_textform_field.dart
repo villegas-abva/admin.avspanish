@@ -11,6 +11,7 @@ class AddQuestionAnswerTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      // controller: controller,
       style: Constants.kRegularText
           .copyWith(color: Colors.black87, fontWeight: FontWeight.w400),
       decoration: InputDecoration(
