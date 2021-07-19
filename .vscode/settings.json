@@ -1,8 +1,10 @@
 {
-  "editor.fontSize": 12,
+  "editor.fontSize": 10,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "window.zoomLevel": 2,
-  "debug.console.fontSize": 12,
-  "terminal.integrated.fontSize": 12,
+  "debug.console.fontSize": 11,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontFamily": "Courier New",
   "git.ignoreLimitWarning": true,
   "files.exclude": {
     "**/.git": true,
