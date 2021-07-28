@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 
 class Constants {
+  // CRUD Operations
+  static const kQuizReference = 'Quiz';
+  static const kTFReference = 'TF';
+  static const kQuestionsReference = 'Questions';
+
+  // Fonts
   static const kRegularText =
       TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.w300);
 
   static const kQuestionText =
       TextStyle(fontSize: 18, fontWeight: FontWeight.w500);
 
-  static List<String> kIdListQuestionAnswer = ["id_Question", "id_Answer"];
-  static List<String> kIdListTime = ["id_StartTime", "id_EndTime"];
+  static List<String> kIdListQuestionAnswer = ["question", "answer"];
+  static List<String> kIdListTime = ["start_time", "end_time"];
 
   static const kHeaderText =
       TextStyle(fontSize: 18, fontWeight: FontWeight.w700);
