@@ -52,7 +52,7 @@ class AddQuizService {
       required String endTime}) async {
     CollectionReference _ref = FirebaseFirestore.instance
         .collection(Constants.kQuizReference)
-        .doc(Constants.kMCFReference)
+        .doc(Constants.kMCReference)
         .collection(show)
         .doc(title)
         .collection(Constants.kQuestionsReference);
@@ -76,8 +76,36 @@ class AddQuizService {
     }
   }
 
-  /// Adds Compare Quiz to Firebase. Takes [title, url, question, answer, startTime, endTime]
+  /// Adds Compare Answers Quiz to Firebase. Takes [title, url, question, answer, startTime, endTime]
   /// Returns a bool = true if write is successful.
+  Future<bool> addCRQuestion(
+      {required String questionNumber,
+      required String show,
+      required String title,
+      required String url,
+      required String question,
+      required String answer,
+      required String startTime,
+      required String endTime}) async {
+    CollectionReference _ref = FirebaseFirestore.instance
+        .collection(Constants.kQuizReference)
+        .doc(Constants.kCRReference)
+        .collection(show)
+        .doc(title)
+        .collection(Constants.kQuestionsReference);
 
-  void addCRQuiz() {}
+    //return true if successful
+    try {
+      await _ref.doc('question $questionNumber').set({
+        'question': question,
+        'answer': answer,
+        'time Start': startTime,
+        'time End': endTime
+      });
+      return true;
+    } catch (e) {
+      print(e.toString());
+      return false;
+    }
+  }
 }
