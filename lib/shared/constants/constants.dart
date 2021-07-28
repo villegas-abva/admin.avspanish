@@ -4,6 +4,7 @@ class Constants {
   // CRUD Operations
   static const kQuizReference = 'Quiz';
   static const kTFReference = 'TF';
+  static const kMCFReference = 'MC';
   static const kQuestionsReference = 'Questions';
 
   // Fonts
