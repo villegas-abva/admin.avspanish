@@ -1,10 +1,10 @@
-import 'package:av_spanish/services/add_quiz/add_quiz_service.dart';
+import 'package:av_spanish/services/quiz_services/add_quiz_service.dart';
 import 'package:av_spanish/shared/constants/constants.dart';
 import 'package:av_spanish/shared/helpers/validation/input_validation.dart';
 import 'package:av_spanish/shared/widgets/animated_text_widget.dart';
-import 'package:av_spanish/shared/widgets/nav_bar/snackbar.dart';
-import 'package:av_spanish/shared/widgets/quiz/add/text_form_field/add_question_answer_textform_field.dart';
-import 'package:av_spanish/shared/widgets/quiz/add/text_form_field/add_time_textform_field.dart';
+import 'package:av_spanish/shared/widgets/snackbar/snackbar.dart';
+import 'package:av_spanish/shared/widgets/text_form_field/add_question_answer_textform_field.dart';
+import 'package:av_spanish/shared/widgets/text_form_field/add_time_textform_field.dart';
 import 'package:flutter/material.dart';
 
 final _formKey = GlobalKey<FormState>();
@@ -48,7 +48,6 @@ class _AddQuizMCScreenState extends State<AddQuizMCScreen> {
   TextEditingController _controllerOptionB = TextEditingController();
   TextEditingController _controllerOptionC = TextEditingController();
   TextEditingController _controllerOptionD = TextEditingController();
-
   TextEditingController _controllerStartTime = TextEditingController();
   TextEditingController _controllerEndTime = TextEditingController();
 
@@ -77,47 +76,47 @@ class _AddQuizMCScreenState extends State<AddQuizMCScreen> {
                 text: 'Texts',
                 isTypeWriterAnimation: true,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Show',
                 controller: _controllerShow,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Title',
                 controller: _controllerTitle,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Url',
                 controller: _controllerUrl,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Question',
                 controller: _controllerQuestion,
                 maxLines: 2,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Answer',
                 controller: _controllerAnswer,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Option A',
                 controller: _controllerOptionA,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Option B',
                 controller: _controllerOptionB,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Option C',
                 controller: _controllerOptionC,
                 maxLines: 1,
               ),
-              AddQuestionAnswerTextFormField(
+              AddTextTextFormField(
                 labelText: 'Option D',
                 controller: _controllerOptionD,
                 maxLines: 1,
