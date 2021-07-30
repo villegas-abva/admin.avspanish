@@ -1,15 +1,16 @@
 import 'package:av_spanish/services/quiz_services/add_quiz_service.dart';
 import 'package:av_spanish/shared/constants/constants.dart';
-import 'package:av_spanish/shared/helpers/validation/input_validation.dart';
 import 'package:av_spanish/shared/widgets/animated_text_widget.dart';
 import 'package:av_spanish/shared/widgets/snackbar/snackbar.dart';
 import 'package:av_spanish/shared/widgets/text_form_field/add_question_answer_textform_field.dart';
 import 'package:av_spanish/shared/widgets/text_form_field/add_time_textform_field.dart';
 import 'package:flutter/material.dart';
+import 'package:av_spanish/shared/helpers/string_manipulation/string_capitalization.dart';
+
 
 final _formKey = GlobalKey<FormState>();
 
-class AddQuizMCScreen extends StatefulWidget with InputValidationMixin {
+class AddQuizMCScreen extends StatefulWidget{
   AddQuizMCScreen({
     Key? key,
   }) : super(key: key);
@@ -148,15 +149,15 @@ class _AddQuizMCScreenState extends State<AddQuizMCScreen> {
             // validate form
             if (_formKey.currentState!.validate()) {
               // Asign contollers' values to texts
-              show = _controllerShow.text;
-              title = _controllerTitle.text;
+              show = _controllerShow.text.capitalize();
+              title = _controllerTitle.text.capitalize();
               url = _controllerUrl.text;
-              question = _controllerQuestion.text;
-              answer = _controllerAnswer.text;
-              optionA = _controllerOptionA.text;
-              optionB = _controllerOptionB.text;
-              optionC = _controllerOptionC.text;
-              optionD = _controllerOptionD.text;
+              question = _controllerQuestion.text.capitalize();
+              answer = _controllerAnswer.text.capitalize();
+              optionA = _controllerOptionA.text.capitalize();
+              optionB = _controllerOptionB.text.capitalize();
+              optionC = _controllerOptionC.text.capitalize();
+              optionD = _controllerOptionD.text.capitalize();
               startTime = _controllerStartTime.text;
               endTime = _controllerEndTime.text;
               //-------------if question == 1-9 [Index = 0-8]:
